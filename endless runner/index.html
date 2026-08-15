@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Neon Endless Runner</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-wrapper">
+
+        <!-- Header -->
+
+        <header class="top-bar">
+
+            <div>
+                <h1>🏃 Neon Runner</h1>
+                <p>Run • Jump • Collect • Survive</p>
+            </div>
+
+            <button id="pauseBtn">
+                ⏸
+            </button>
+
+        </header>
+
+
+        <!-- Game -->
+
+        <div id="game">
+
+            <!-- Background -->
+
+            <div class="moon"></div>
+
+            <div class="stars">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+
+            <!-- Score -->
+
+            <div class="hud">
+
+                <div class="hud-box">
+                    🏆
+                    <span>Score</span>
+                    <strong id="score">0</strong>
+                </div>
+
+                <div class="hud-box">
+                    🪙
+                    <span>Coins</span>
+                    <strong id="coins">0</strong>
+                </div>
+
+                <div class="hud-box">
+                    ❤️
+                    <span>Lives</span>
+                    <strong id="lives">3</strong>
+                </div>
+
+            </div>
+
+
+            <!-- Ground -->
+
+            <div class="ground">
+
+                <div class="ground-line"></div>
+
+            </div>
+
+
+            <!-- Player -->
+
+            <div id="player">
+
+                <div class="player-head"></div>
+
+                <div class="player-body"></div>
+
+                <div class="player-leg left-leg"></div>
+
+                <div class="player-leg right-leg"></div>
+
+            </div>
+
+
+            <!-- Game Over -->
+
+            <div id="gameOver" class="game-over">
+
+                <div class="game-over-box">
+
+                    <div class="game-over-icon">
+                        💥
+                    </div>
+
+                    <h2>Game Over!</h2>
+
+                    <p>Your Score</p>
+
+                    <strong id="finalScore">
+                        0
+                    </strong>
+
+                    <p class="best">
+                        Best Score:
+                        <span id="bestScore">
+                            0
+                        </span>
+                    </p>
+
+                    <button id="restartBtn">
+                        🔄 Play Again
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Pause -->
+
+            <div id="pauseScreen" class="pause-screen">
+
+                <div>
+
+                    <h2>⏸ Game Paused</h2>
+
+                    <p>Press Resume to continue</p>
+
+                    <button id="resumeBtn">
+                        ▶ Resume
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Start Screen -->
+
+            <div id="startScreen" class="start-screen">
+
+                <div>
+
+                    <div class="runner-icon">
+                        🏃
+                    </div>
+
+                    <h2>Neon Runner</h2>
+
+                    <p>
+                        Jump over obstacles and collect coins!
+                    </p>
+
+                    <button id="startBtn">
+                        ▶ Start Game
+                    </button>
+
+                    <small>
+                        Space / ↑ to Jump
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Mobile Controls -->
+
+        <div class="mobile-controls">
+
+            <button id="mobileJump">
+                ⬆️ JUMP
+            </button>
+
+        </div>
+
+
+        <footer>
+
+            <span>
+                Space / ↑ = Jump
+            </span>
+
+            <span>
+                Avoid obstacles!
+            </span>
+
+        </footer>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
